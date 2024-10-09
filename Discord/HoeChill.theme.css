@@ -1,12 +1,10 @@
 /**
- * @name Chillax
- * @author Chillax Squad
- * @authorLink https://github.com/warrayquipsome/Chillax#author
- * @version 1.0.0
- * @invite DrfX6286kF
+ * @name HoeChill
+ * @author Hoecat
+ * @authorLink https://github.com/rootkit-
+ * @version 1.0.1
  * @description The theme where calm meets customization.
- * @source https://github.com/warrayquipsome/Chillax
- * @donate https://www.paypal.me/wqqt9
+ * @source https://raw.githubusercontent.com/Rootkit-/HoeCard/main/docs/themes/
 */
 
 /*
@@ -23,8 +21,9 @@
 */
 
 /*chillax*/
-@import url('https://warrayquipsome.github.io/Chillax/chillax.css');
-
+@import url('https://rootkit-.github.io/HoeCard/themes/chillax.css');
+/*@import url('https://warrayquipsome.github.io/Chillax/chillax.css');*/
+/*@import url("file:///C:/Users/Tyler/AppData/Roaming/BetterDiscord/themes/dark.mode.css");*/
 /*removable addons*/
 /*@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Microsoft.css");*/
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css');
@@ -71,7 +70,7 @@
 
 /*roots*/ /*both dark and light*/
 :root {
-  --user-name: "King";
+  --user-name: "Hoecat";
   --edited-message: " EDITED ✎ ";
   --font-name: Poppins;
   --font-size: 14px;

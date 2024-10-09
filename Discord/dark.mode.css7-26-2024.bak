@@ -966,19 +966,10 @@ span:not(.spinner-item) {
     font-size: var(--font-size) !important;
 }
 
-.messageContent_f9f2ca,
+.messageContent_ec86aa,
 .contents_ec86aa {
     font-family: var(--font-name);
     font-size: var(--font-size) !important;
-}
-
-.markup_f8f345 h1,
-.markup_f8f345 h2,
-.markup_f8f345 h3,
-.markup_f8f345 h4,
-.markup_f8f345 h5,
-.markup_f8f345 h6 {
-	font-family: var(--font-name);
 }
 
 /*custom public servers and create server buttons*/
@@ -2021,154 +2012,6 @@ div[class*="wrapper_c51b4e"][aria-label*="Online"]>svg[class="mask_c51b4e svg_c5
     z-index: -1;
 }
 
-/* Custom Spotify controls for Vencord */
-#vc-spotify-player {
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	overflow: hidden;
-	border-radius: 8px;
-	margin: 8px;
-	padding: 8px;
-	border-bottom-color: transparent;
-	--vc-spotify-green: var(--accentcolorV2);
-}
-
-.theme-dark #vc-spotify-player {
-	background-color: #181a1d !important;
-}
-
-#vc-spotify-player::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-image: var(--vc-spotify-track-image);
-	background-size: cover;
-	background-position: center;
-	filter: blur(8px);
-	opacity: .6;
-	z-index: 0;
-}
-
-#vc-spotify-info-wrapper {
-	height: auto;
-}
-
-#vc-spotify-titles {
-	padding: 0;
-}
-
-#vc-spotify-song-title,
-.vc-spotify-artist,
-.vc-spotify-album {
-	color: #ffffff;
-	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-#vc-spotify-song-title {
-	font-size: 18px;
-	margin-bottom: 4px;
-}
-
-.vc-spotify-artist,
-.vc-spotify-album {
-	font-size: 14px;
-}
-
-.vc-spotify-button-row {
-	width: fit-content;
-	align-self: center;
-	height: 0;
-	overflow: hidden;
-	transition: height 0.2s ease;
-	order: 1;
-	z-index: 1;
-}
-
-#vc-spotify-player:hover .vc-spotify-button-row {
-	height: 32px;
-}
-
-#vc-spotify-progress-bar {
-	order: 2;
-	z-index:1;
-}
-
-.vc-spotify-button {
-	--interactive-normal: #FFFFFF;
-	--interactive-hover: #FFFFFF;
-	filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.6));
-}
-
-.vc-spotify-button:hover {
-	background-color: rgba(255, 255, 255, 0.1);
-}
-
-.vc-spotify-progress-time {
-	color: #ffffff;
-	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-#vc-spotify-progress-bar>[class^=slider] [class^=grabber] {
-	width: 25px !important;
-	height: 25px !important;
-	background-color: transparent;
-	background-image: url("https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/0c/Glow_Squid_BE1.gif");
-	background-size: cover;
-	border: none;
-	transform: rotate(90deg);
-	margin-left: -16px;
-	inset: 3px 0 0 0px;
-	box-shadow: none;
-}
-
-/* Transparent album image to preserve onClick functionality */
-#vc-spotify-album-image {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	opacity: 0;
-}
-
-#vc-spotify-info-wrapper {
-	position: static
-}
-
-#vc-spotify-titles>* {
-	z-index: 2;
-	max-width: 100%;
-	width: auto;
-}
-
-/* Handle expanded album image */
-
-#vc-spotify-player:has(#vc-spotify-album-expanded-wrapper) {
-	position: relative;
-	aspect-ratio: 1/1;
-}
-
-#vc-spotify-album-expanded-wrapper {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	aspect-ratio: 1/1;
-}
-
-#vc-spotify-album-expanded-wrapper>#vc-spotify-album-image {
-	opacity: 1;
-	z-index: 1;
-}
-
-#vc-spotify-player:has(#vc-spotify-album-expanded-wrapper) .vc-spotify-button-row {
-	margin-top: auto;
-}
-
 /*custom user setting profile position*/
 .layer_d4b6c5 .accountProfileCard_b69b77 .settingsBanner_c3e427 {
     margin: 8px;
@@ -2346,11 +2189,8 @@ div[class*="wrapper_c51b4e"][aria-label*="Online"]>svg[class="mask_c51b4e svg_c5
 /*custom new unreads*/
 .bar_eba0ba {
     padding: 14px 50px;
-}
-
-/* Fixes position of unreads at the bottom of the channel list */
-.bottom_eba0ba {
-	transform: translateY(-85px);
+    /*margin-bottom: 85px;*/
+    /* This causes issues and won't let near by channel to be click able */
 }
 
 .unreadIcon_eba0ba {
@@ -2370,17 +2210,17 @@ div[class*="wrapper_c51b4e"][aria-label*="Online"]>svg[class="mask_c51b4e svg_c5
 }
 
 /* remove date divider */
-.hasContent_c2654d {
+.hasContent_d5deea {
     display: none;
 }
 
 /* Un-hide unread divider with date */
-.isUnread_c2654d {
+.isUnread_fc5f50 {
     display: flex !important;
 }
 
 /* Hide date in unread divider */
-.content_c2654d {
+.content_fc5f50 {
     display: none;
 }
 
