@@ -1,8 +1,8 @@
 [package]
-name = "lost_ark_refiner"
-version = "0.1.0"
-authors = ["John Gallagher <johnkgallagher@gmail.com>"]
-edition = "2018"
+name = "Javascript"
+version = "1"
+authors = "Hoecat"
+edition = "2024"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
