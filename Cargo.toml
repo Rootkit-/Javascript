@@ -1,0 +1,40 @@
+[package]
+name = "lost_ark_refiner"
+version = "0.1.0"
+authors = ["John Gallagher <johnkgallagher@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+arrayvec = "0.7"
+crossbeam-channel = "0.5"
+eframe = "0.15.0" # Gives us egui, epi and web+native backends
+fnv = "1.0"
+rand = "0.8"
+
+serde = { version = "1", features = ["derive"], optional = true }
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+parking_lot = "0.11"
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+getrandom = { version = "0.2", features = ["js"] }
+
+[features]
+default = []
+persistence = ["arrayvec/serde", "eframe/persistence", "serde"] # Enable if you want to persist app state on shutdown
+
+[profile.release]
+opt-level = 2 # fast and small wasm
+
+[patch.crates-io]
+
+# If you want to use the bleeding edge version of `egui`:
+# eframe = { git = "https://github.com/emilk/egui", branch = "master" }
+
+# If you fork https://github.com/emilk/egui you can test with:
+# eframe = { path = "../egui/eframe" }
