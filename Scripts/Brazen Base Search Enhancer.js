@@ -9,6 +9,7 @@
 
 const ICON_RECYCLE = '&#x267B'
 
+// Preset filter configuration keys
 
 const CONFIG_PAGINATOR_LIMIT = 'Pagination Limit'
 const CONFIG_PAGINATOR_THRESHOLD = 'Pagination Threshold'
