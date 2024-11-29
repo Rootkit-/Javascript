@@ -1,1 +1,1 @@
-W:/Down/py/Tamper/hoefunc.js
+../../../Tamper/hoefunc.js
