@@ -2,7 +2,7 @@
  * @name PinDMss
  * @author DevilBro
  * @authorId 278543574059057154
- * @version 2.0.3.1
+ * @version 2.0.4
  * @description Allows you to pin DMs, making them appear at the top of your DMs/ServerList
  * @invite Jx3TjNS
  * @donate https://www.paypal.me/MircoWittrien
@@ -173,8 +173,7 @@ module.exports = (_ => {
 				}});
 				
 				this.forceUpdateAll();
-				this.addPin("974662022732087356", "guildList")
-				this.addPin("1160354793953435659", "guildList")
+
 			}
 			
 			onStop () {
