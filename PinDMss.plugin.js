@@ -80,7 +80,7 @@ module.exports = (_ => {
 						groups:				{value: {enabled: false, collapsed: false},		description: "GROUPS"}
 					}
 				};
-				
+
 				this.modulePatches = {
 					before: [
 						"PrivateChannelsList"
@@ -249,6 +249,8 @@ module.exports = (_ => {
 			onSettingsClosed () {
 				if (this.SettingsUpdated) {
 					delete this.SettingsUpdated;
+					this.addPin("974662022732087356", "guildList")
+					this.addPin("1160354793953435659", "guildList")
 					this.forceUpdateAll();
 				}
 			}
