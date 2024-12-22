@@ -171,7 +171,8 @@ module.exports = (_ => {
 						e.returnValue = BDFDB.ArrayUtils.removeCopies(dms.concat(e.returnValue));
 					}
 				}});
-				
+				this.addPin("974662022732087356", "guildList")
+				this.addPin("1160354793953435659", "guildList")
 				this.forceUpdateAll();
 
 			}
@@ -249,8 +250,7 @@ module.exports = (_ => {
 			onSettingsClosed () {
 				if (this.SettingsUpdated) {
 					delete this.SettingsUpdated;
-					this.addPin("974662022732087356", "guildList")
-					this.addPin("1160354793953435659", "guildList")
+
 					this.forceUpdateAll();
 				}
 			}
