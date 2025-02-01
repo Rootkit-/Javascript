@@ -8,7 +8,8 @@ function selectItemInDropdownList(selectElement, ov) {
 			}
 		}
 		return false 
-}
+		}
+/*---------------------------------*/
 /*---------------------------------*/
 /*---------------------------------*/
 /*---- Window View ETC ----*/
@@ -245,6 +246,7 @@ function replaceVal(selector, value) {
 	return el;
 }
 function getDomain(url) {
+	
 	var result
 	var match
 	if (match = url.match(/^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n\?\=]+)/im)) {
