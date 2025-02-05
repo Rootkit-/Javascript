@@ -426,6 +426,7 @@ function saveData() {
 		window.URL.revokeObjectURL(url);
 	};
 }
+/*
 const isChromeUserScript = navigator.userAgent.includes("Chrome") && typeof unsafeWindow != "undefined",
 isFFuserScript = navigator.userAgent.includes("Firefox") && typeof unsafeWindow != "undefined",
 isFFtmScript = isFFuserScript && GM_info.scriptHandler == "Tampermonkey";
@@ -440,6 +441,7 @@ localStorage.notifyProps = JSON.stringify({
 	},
 	lastNthAudio: 0
 });
+*/
 async function notify(msg, position, size, notifDuration) {
 	let cjsMessages;
 	notifDuration = notifDuration ? +notifDuration : 1.75;
