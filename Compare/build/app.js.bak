@@ -42100,7 +42100,7 @@ a.d = (e, t) => {
 															icon: ru(Et[Rt[_t].g]),
 															videos: [],
 															loading: !0,
-															limit: 30,
+															limit: 15,
 															videosCount: 0
 														}
 													 : "c" in Rt[_t] ? (Lt = Us(Rt[_t].c, {}), Rt[_t] = {
@@ -42110,7 +42110,7 @@ a.d = (e, t) => {
 															icon: null !== Lt ? Lt.img : "",
 															videos: [],
 															loading: !0,
-															limit: 30,
+															limit: 15,
 															videosCount: 0
 														}) : "p" in Rt[_t] && (Rt[_t] = {
 															type: "playlist",

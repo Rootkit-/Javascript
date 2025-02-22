@@ -20,7 +20,8 @@
    } ],
    "default_locale": "en",
    "description": "__MSG_description__",
-   "homepage_url": "https://yousub.info/",
+   "differential_fingerprint": "1.772b4b80e5dcdda2a9775d9dd18d1a3e9d308ab61e42689936951d3c29383dfa",
+   "homepage_url": "https://pockettube.io/",
    "host_permissions": [ "https://*.youtube.com/*" ],
    "icons": {
       "128": "/icon/icon_128.png",
