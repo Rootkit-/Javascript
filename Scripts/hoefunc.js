@@ -203,7 +203,16 @@ function equalsAnyStringLower(str, substrings) {
 }
 function containsAnyTrue(str, substrings) {
 	for (var i = 0; i != substrings.length; i++) {
-		var substring = substrings[i];
+		var substring = substrings[i]
+		if (str.indexOf(substring) != -1) {
+			return true;
+		}
+	}
+	return false;
+}
+function containsAnyTrueLower(str, substrings) {
+	for (var i = 0; i != substrings.length; i++) {
+		var substring = substrings[i].toLowerCase();
 		if (str.indexOf(substring) != -1) {
 			return true;
 		}
@@ -244,6 +253,11 @@ function replaceVal(selector, value) {
 			})); 
 	}
 	return el;
+}
+function replaceCase(str, pattern, newStr) {
+  const rx = new RegExp(pattern, "ig")
+  const replacer = (c, i) => c.match(/[A-Z]/) ? newStr[i].toUpperCase() : newStr[i]
+  return str.replace(rx, (oldStr) => oldStr.replace(/./g, replacer) )
 }
 function getDomain(url) {
 	
