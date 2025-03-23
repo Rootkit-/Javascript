@@ -1,15 +1,18 @@
-/*
-* FileSaver.js
-* A saveAs() FileSaver implementation.
-*
-* By Eli Grey, http://eligrey.com
-*
-* License : https://github.com/eligrey/FileSaver.js/blob/master/LICENSE.md (MIT)
-* source  : http://purl.eligrey.com/github/FileSaver.js
-*/
-
-// The one and only way of getting global scope in all environments
-// https://stackoverflow.com/q/3277182/1008999
+(function (global, factory) {
+  if (typeof define === "function" && define.amd) {
+    define([], factory);
+  } else if (typeof exports !== "undefined") {
+    factory();
+  } else {
+    var mod = {
+      exports: {}
+    };
+    factory();
+    global.FileSaver = mod.exports;
+  }
+})(this, function () {
+  "use strict";
+  
 var _global = typeof window === 'object' && window.window === window
   ? window : typeof self === 'object' && self.self === self
   ? self : typeof global === 'object' && global.global === global
@@ -30,7 +33,31 @@ function bom (blob, opts) {
   }
   return blob
 }
-
+function createblob(url,name,types,opts){
+	var textFileAsBlob = new Blob([textToWrite], {
+		type: type
+	});
+	saveAs(window.URL.createObjectURL(textFileAsBlob), name, opts)
+};
+function download2(url, name, opts) {
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', url)
+	xhr.responseType = 'blob';
+	xhr.onload = function () {
+		saveAs(xhr.response, name, opts)
+	}
+	xhr.onprogress = evt => {
+		if (evt.lengthComputable) {
+			console.log(`Saving: ${name}: ${url} ${evt.loaded}/${evt.total}`)
+		} else {
+			console.log(`Saving: ${name}: ${url} ${evt.loaded}`)
+		}
+	}
+	xhr.onerror = function () {
+		console.error('could not download file')
+	}
+	xhr.send()
+}
 function download (url, name, opts) {
   var xhr = new XMLHttpRequest()
   xhr.open('GET', url)
