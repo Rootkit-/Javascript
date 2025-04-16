@@ -178,6 +178,9 @@ function qsa(c, s) {
 		return document.querySelectorAll(c)
 	}
 }
+var splitTest = function (str) {
+    return str.split('\\').pop().split('/').pop();
+}
 function clickz(obj) {
 	triggerEvent(obj, "popstate");
 	triggerEvent(obj, "focus");
