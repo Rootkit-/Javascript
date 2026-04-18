@@ -1,0 +1,133 @@
+.:. Media (Green)
+MSK: MusikCube
+MPC: Media player classic
+AUD: Audacity
+FOO: Foobar
+MP3: MP3 tag apps
+TRK: Audio trackers / Sequencer applications
+WA: WinAmp
+WAV: Audio Editors
+VST: VST Applications
+DJ: DJing / mixing Apps
+ITUN: iTunes
+WMP: Windows Media Player
+MM: MixMiester
+DVD: DVD Player
+VLC: VLC Media player
+FRU: Fruity loops
+QT: QuickTime
+SND: Soundforge
+ACD: Acid
+
+.:. Graphics (Blue)
+PS: Photoshop
+PNT: Paint
+PSP: Paintshop Pro
+FL: Flash
+ILL: Illustrator
+SU: SketchUp
+DW: Dreamweaver
+3D: 3d apps
+IN: Indesign
+GMP: Gimp
+FON: Font Managers
+ATM: Adobe Type Manager
+CM: Character map
+ART: ArtRage
+VID: Video editing
+APO: Apophysis
+EXP: Quark Express
+GIF: IamgeReady & Other GIF apps
+PIC: Picasa
+TG: Theme generating apps (PDA / CEL etc...)
+ENC: For encoders / Rippers
+CPT: Corel Paint
+
+.:. Internet (Red)
+MIR: Miranda
+LW: Limewire
+uT: uTorrent
+P2P: Peer-to-peer apps
+PDG: Pidgin
+MAP: Web-maps
+STM: Steam
+CMN: Camino
+OP: Opera
+EML: Email clients
+TRI: Trillian
+FF: FireFox
+IE: Internet Explorer
+GC: Google Chat
+MSN: MSN Messenger
+SKP: Skype
+SAF: Safari
+ADI: Audium
+HEX: HTML / CSS web code stuff
+DL: Downloading applications
+XFI: Xfire
+VNT: Ventrilo
+TS: Teamspeak
+
+.:. System (White)
+SPY: Spyware Programs
+FND: Finder & Search tools
+DSH: Dashboard
+SYS: SYstem Prefs
+UPD: windows update
+AA: AdAware
+AU: Audio devices
+BAK: Backup software
+CC: Ccleaner
+BRN: CD & DVD burning
+NRO: Nero StartSmart
+FRG: Defragmenter
+PDA: PDA tools
+CEL: Mobile (cell) phone
+IMG: Image viewers
+ZIP: ZIp & other compression tools
+ICO: Icon management apps
+TAB: Graphics tablet
+CAM: Camera
+DSK: Show desktop
+COM: Computer
+NET: Network
+LAN: Network
+DL: Downloads
+TMP: Temp folder
+PLY: Games folder
+DOX: Documents folder
+PIX: Pictures folder
+CTL: Control panel
+TRX: Music folder
+VID: Video folder
+SNC: Covers all applications to update and sync portable media device
+PS3: For those of you who route media to your PS3
+XBX: For those of you who route media to your XBox
+PMD: Portable Media Device
+STY: Styler
+WIN: Windows (for use as a menu)
+BIN: Recycle / trash bin
+DEV: deviantArt
+PJK: Projects
+SCH: School
+
+.:. Office (Yellow)
+DOC: Word & similar
+SPR: Exel & similar (Spreadsheets..)
+PRS: PowerPoint & similar (Presentation...)
+DTB: Access & similar (Database...)
+ONE: OneNote
+WEB: Frontpage & similar
+TXT: Text pad
+CAL: Calculators
+OO: OpenOffice
+RTF: Word pad (Rich Text...)
+PDF: Adobe acrobat & other PDF viewers
+VOX: Translation
+
+
+
+
+
+
+
